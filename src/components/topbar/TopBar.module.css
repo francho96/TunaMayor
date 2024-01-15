@@ -1,0 +1,39 @@
+.topbarContainer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+}
+
+.botonesContainer {
+    display: none;
+}
+
+.botonCelular {
+    color: var(--primary-color);
+    display: flex;
+    font-size: 30px;
+    transform: rotate(90deg);
+}
+
+@media (min-width: 450px) {
+    .botonesContainer {
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        font-size: 20px;
+        gap: 20px;
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+
+    .button:hover {
+        color: #FFFFFFAA;
+    }
+
+    .botonCelular {
+        display: none;
+    }
+}
