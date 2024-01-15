@@ -3,11 +3,12 @@ import logoTuna from './assets/logo-tuna_bn.png';
 
 const botonesTopbar = [
     { name: 'Inicio', link: '/' },
-    { name: 'Inicio', link: '/' },
-    { name: 'Inicio', link: '/' },
-    { name: 'Inicio', link: '/' },
-    { name: 'Inicio', link: '/' },
-    { name: 'Inicio', link: '/' },
+    { name: '¿Qué somos?', link: '/' },
+    { name: 'Historia', link: '/historia' },
+    { name: 'Noticias', link: '/' },
+    { name: 'Integrantes', link: '/' },
+    { name: 'Disco', link: '/' },
+    { name: 'Contactos', link: '/' },
 ];
 
 function Topbar() {
