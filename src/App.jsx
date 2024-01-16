@@ -1,4 +1,4 @@
-import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const Layout = lazy(() => import('./layout/GeneralLayout'));
@@ -8,13 +8,16 @@ function App() {
     return (
         <>
             <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Layout />}>
-                        <Route path="historia" element={<Historia />}>
-                            {' '}
+                <Suspense fallback={<>Cargando </>}>
+                    <Routes>
+                        <Route path="/" element={<Layout />}>
+                            <Route
+                                path="historia"
+                                element={<Historia />}
+                            ></Route>
                         </Route>
-                    </Route>
-                </Routes>
+                    </Routes>
+                </Suspense>
             </BrowserRouter>
         </>
     );

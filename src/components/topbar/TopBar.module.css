@@ -1,24 +1,82 @@
+
 .topbarContainer {
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100px;
     width: 100vw;
     background-color: black;
+    z-index: 1;
 }
+
+.menuContainer {
+    display:block;
+    position: absolute;
+    z-index: 0;
+}
+
+.menuOpen {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    transform: translateY(100px);
+    transition: transform 0.5s linear;
+    background-color: black;
+    z-index: 0;
+    
+}
+
+.menuClosed {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    transform: translateY(-900px);
+    transition: transform 0.5s linear;
+    background-color: black;
+    z-index: 2;
+}
+
+.menuText {
+    margin: 10px 0px 10px 0px;
+}
+
 
 .botonesContainer {
     display: none;
+}
+
+.logoContainer {
+    margin-top: -4px;
 }
 
 .botonCelular {
     color: var(--primary-color);
     display: flex;
     font-size: 30px;
+    margin-right: 20px;
     transform: rotate(90deg);
+    cursor: pointer;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 830px) {
+    .topbarContainer {
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+        width: 100vw;
+        background-color: black;
+    }
+
+    .menuContainer {
+        display: none;
+    }
     .botonesContainer {
         margin-top: auto;
         margin-bottom: auto;
