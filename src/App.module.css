@@ -1,0 +1,70 @@
+
+
+.logoContainerLoading {
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  transition: opacity 1s linear 1s;
+}
+
+
+
+.loadingLetterLoading {
+  display: flex;
+  position: absolute;
+  transition: transform 0.5s linear;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lamericanaLetter {
+  z-index: 20;
+}
+
+
+.rotateBorder {
+  top: -50%;
+  left: -70%;
+  position: absolute;
+  -webkit-animation: rotate-center 15s linear infinite both;
+	        animation: rotate-center 15s linear infinite both;
+  z-index: 10;
+}
+
+.container {
+  margin: 0px 17.5px 0px 17.5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 8px;
+}
+
+.tabContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
