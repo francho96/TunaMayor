@@ -29,6 +29,10 @@
     
 }
 
+.activeButton {
+    border-bottom: 2px solid #f4f4f4;
+}
+
 .menuClosed {
     position: absolute;
     display: flex;
@@ -87,9 +91,10 @@
         color: var(--primary-color);
     }
 
-    .button:hover {
+    .button:hover,
+    .hoverEffect:hover {
         color: #FFFFFFAA;
-    }
+    }   
 
     .botonCelular {
         display: none;

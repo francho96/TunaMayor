@@ -7,7 +7,7 @@ import lamericanaBorder from './assets/LamericanaBorder.png';
 
 const Layout = lazy(() => import('./layout/GeneralLayout'));
 const Historia = lazy(() => import('./views/historia/Historia'));
-
+const Integrantes = lazy(() => import('./views/integrantes/Integrantes'));
 function Loading() {
     const [loading, setLoading] = useState(true);
 
@@ -48,6 +48,10 @@ function App() {
                             <Route
                                 path="historia"
                                 element={<Historia />}
+                            ></Route>
+                            <Route
+                                path="integrantes"
+                                element={<Integrantes />}
                             ></Route>
                         </Route>
                     </Routes>

@@ -1,14 +1,14 @@
 import styles from './TopBar.module.css';
 import { useState } from 'react';
 import logoTuna from './assets/logo-tuna_bn.png';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const botonesTopbar = [
     { name: 'Inicio', link: '/' },
     { name: '¿Qué somos?', link: '/' },
     { name: 'Historia', link: 'historia' },
     { name: 'Noticias', link: '/' },
-    { name: 'Integrantes', link: '/' },
+    { name: 'Integrantes', link: '/integrantes' },
     { name: 'Disco', link: '/' },
     { name: 'Contactos', link: '/' },
 ];
@@ -28,9 +28,14 @@ function Topbar() {
                 <div className={styles.botonesContainer}>
                     {botonesTopbar.map((data) => (
                         <>
-                            <Link to={data.link} className={styles.button}>
+                            <NavLink
+                                key={data.name}
+                                to={data.link}
+                                activeClassName={styles.activeButton}
+                                className={`${styles.button} ${styles.hoverEffect}`}
+                            >
                                 {data.name}
-                            </Link>
+                            </NavLink>
                         </>
                     ))}
                 </div>
@@ -46,7 +51,7 @@ function Topbar() {
                     {botonesTopbar.map((data) => (
                         <>
                             <div className={styles.menuText}>
-                                <Link
+                                <NavLink
                                     to={data.link}
                                     className={styles.button}
                                     onClick={() => {
@@ -54,7 +59,7 @@ function Topbar() {
                                     }}
                                 >
                                     {data.name}
-                                </Link>
+                                </NavLink>
                             </div>
                         </>
                     ))}
