@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    overflow-x: hidden; /* Agrega esta línea para ocultar desbordamiento horizontal */
+    overflow-x:hidden;
   }
 
 .titleBackground {
     height: 400px;
     width: 100%;
-    background-image: url("./assets/nordic.png");
+    background-image: url("./assets/thumbnail.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@ body {
 }
 
 .integrantesContainer {
-    margin-top: 80px;
+    margin-top: 80px !important;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -58,12 +58,14 @@ body {
 
 .description {
     margin-top: 10px;
-    text-align: justify;
+    text-align: left;
+    line-height: 25px;
 
 }
 @media (min-width: 950px){
     .integrantesContainer {
         margin-top: 80px;
+        margin-bottom: 80px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;

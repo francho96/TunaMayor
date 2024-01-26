@@ -7,7 +7,9 @@ function App() {
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
             <TopBar />
-            <Outlet />
+            <div style={{ marginTop: '-100px' }}>
+                <Outlet />
+            </div>
         </div>
     );
 }
