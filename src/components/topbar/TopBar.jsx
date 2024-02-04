@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 const botonesTopbar = [
     { name: 'Inicio', link: '/' },
     { name: '¿Qué somos?', link: '/' },
-    { name: 'Historia', link: 'historia' },
+    { name: 'Historia', link: '/historia' },
     { name: 'Noticias', link: '/' },
     { name: 'Integrantes', link: '/integrantes' },
     { name: 'Disco', link: '/' },

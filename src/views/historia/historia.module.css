@@ -13,3 +13,81 @@ body {
     padding-top: 100px;
     
 }
+
+.videoContainer {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoFrame {
+  border-radius: 15px;
+}
+
+.imgFrameFirstBlock{
+  margin: 15px;
+  margin-left: 100px;
+  border-radius: 15px;
+}
+
+.imgFrameThirdBlock{
+  margin: 15px;
+  margin-left: 50px;
+  border-radius: 15px;
+}
+
+.title {
+  margin-top: 30px;
+}
+
+.subtitle{
+  margin-top: 50px;
+  color: #ede5e5;
+  font-weight: 500;
+}
+
+.firstBlock{
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.secondBlock{
+  margin-left: 100px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstParagraph{
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  color: #706e6e;
+  font-size: 20px;
+  font-weight: 580;
+  line-height: 30px;
+}
+
+.secondParagraph{
+  color: #706e6e;
+  font-size: 20px;
+  font-weight: 580;
+  line-height: 30px;
+}
+
+.thirdParagraph{
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 15px;  
+  color: #706e6e;
+  font-size: 20px;
+  font-weight: 580;
+  line-height: 30px;
+}
