@@ -35,6 +35,7 @@ const IntegrantesList = [
     },
 ];
 
+
 function App() {
     return (
         <>

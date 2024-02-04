@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    overflow-x:hidden;
+  }
+
+.titleBackground {
+    height: 400px;
+    width: 100%;
+    background-image: url("./assets/thumbnail.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    
+}
