@@ -8,6 +8,8 @@ import lamericanaBorder from './assets/LamericanaBorder.png';
 const Layout = lazy(() => import('./layout/GeneralLayout'));
 const Historia = lazy(() => import('./views/historia/Historia'));
 const Integrantes = lazy(() => import('./views/integrantes/Integrantes'));
+const Galeria = lazy(()=> import('./views/galeria/Galeria'));
+
 function Loading() {
     const [loading, setLoading] = useState(true);
 
@@ -52,6 +54,10 @@ function App() {
                             <Route
                                 path="integrantes"
                                 element={<Integrantes />}
+                            ></Route>
+                            <Route
+                                path = "galeria"
+                                element={<Galeria/>}
                             ></Route>
                         </Route>
                     </Routes>

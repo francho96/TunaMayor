@@ -10,6 +10,7 @@ const botonesTopbar = [
     { name: 'Noticias', link: '/' },
     { name: 'Integrantes', link: '/integrantes' },
     { name: 'Disco', link: '/' },
+    { name: 'Galeria', link: '/galeria'},
     { name: 'Contactos', link: '/' },
 ];
 
